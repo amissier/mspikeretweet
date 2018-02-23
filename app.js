@@ -3,7 +3,7 @@ const config = require('./config.js');
 const T = new Twitter(config);
 
 const params = {
-  q: '#trump, #Trump, #Melbourne',  
+  q: '#Melbourne',  
   result_type: 'recent',
   lang: 'en'
 }
@@ -27,12 +27,14 @@ tweetid = data.statuses[0].id_str;
 
 
 
-T.post('statuses/retweet/:id', {id:tweetid}, (err, response) => {
-      if(err){
-        return console.log('Retweet failed ...'+err[0].message);
-      }
-
-
-const username = response.user.screen_name;
-console.log(`Reweeted: ${username}`);
-});
+T.post('statuses/retweet/:id', {id:tweetid}, function(err, response) {
+                if (response) {
+                    console.log('Retweeted!!!');
+                    const username = response.user.screen_name;
+                     console.log(`Reweeted: ${username}`);
+                }
+                // if there was an error while tweeting
+                if (err) {
+                    console.log('Something went wrong while RETWEETING... Duplication maybe...');
+                }
+            });
