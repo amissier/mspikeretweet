@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pcodex/samvitsoftwaresolutions.git"
+    "url": "git+https://github.com/pcodex/mspikeretweet.git"
   },
   "keywords": [
     "samvit",
@@ -26,5 +26,5 @@
   "bugs": {
     "url": "https://github.com/pcodex/samvitsoftwaresolutions/bugs"
   },
-  "homepage": "https://github.com/pcodex/samvitsoftwaresolutions#readme"
+  "homepage": "https://github.com/pcodex/mspikeretweet#readme"
 }
