@@ -34,6 +34,6 @@ T.post('statuses/retweet/:id', tweetid, (err2, response2) => {
                 }
                 // if there was an error while tweeting
                 if (err2) {
-                    console.log('Something went wrong '+ err2);
+                    console.log('Something went wrong ', err2);
                 }
             });
