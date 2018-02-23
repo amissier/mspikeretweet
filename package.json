@@ -1,0 +1,30 @@
+{
+  "name": "Samvit Retweeter",
+  "version": "1.0.0",
+  "description": "Retweets a certain hashtag",
+  "main": "app.js",
+  "dependencies": {
+    "twitter": "^1.7.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pcodex/samvitsoftwaresolutions.git"
+  },
+  "keywords": [
+    "samvit",
+    "bot",
+    "twitter",
+    "nodejs"
+  ],
+  "author": "Prabhu Missier",
+  "license": "GNU",
+  "bugs": {
+    "url": "https://github.com/pcodex/samvitsoftwaresolutions/bugs"
+  },
+  "homepage": "https://github.com/pcodex/samvitsoftwaresolutions#readme"
+}
