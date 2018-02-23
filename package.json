@@ -1,7 +1,7 @@
 {
-  "name": "100daysofcode-bot",
+  "name": "mspikeretweet",
   "version": "1.0.0",
-  "description": "100 days of code bot, made with Node JS ",
+  "description": "Retweet App",
   "main": "app.js",
   "dependencies": {
     "twitter": "^1.7.1"
@@ -13,18 +13,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ajukco/100daysofcode-bot.git"
+    "url": "git+https://github.com/pcodex/mspike.git"
   },
   "keywords": [
-    "100daysofcode",
+    "retweet",
     "bot",
     "twitter",
     "nodejs"
   ],
-  "author": "Andrew Raynes",
-  "license": "MIT",
+  "author": "Prabhu M",
+  "license": "GPL",
   "bugs": {
-    "url": "https://github.com/ajukco/100daysofcode-bot/issues"
+    "url": "https://github.com/pcodex/mspikeretweet/issues"
   },
-  "homepage": "https://github.com/ajukco/100daysofcode-bot#readme"
+  "homepage": "https://github.com/pcodex/mspikeretweet#readme"
 }
