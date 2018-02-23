@@ -27,13 +27,13 @@ tweetid = data.statuses[0].id_str;
 
 
 
-T.post('statuses/retweet/:id', {id:tweetid}, function(err, response) {
-                if (response) {
+T.post('statuses/retweet/:id', tweetid, (err2, response2) => {
+                if (response2) {
                     console.log('Retweeted!!!');
                     
                 }
                 // if there was an error while tweeting
-                if (err) {
-                    console.log('Something went wrong '+err[0]);
+                if (err2) {
+                    console.log('Something went wrong '+ err2[0]);
                 }
             });
