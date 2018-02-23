@@ -4,7 +4,7 @@ const T = new Twitter(config);
 
 // Set up your count and search parameters
 const params = {
-  q: '#gre',  
+  q: '#toefl',  
   result_type: 'recent',
   lang: 'en'
 }
