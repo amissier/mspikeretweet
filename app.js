@@ -2,35 +2,36 @@ const Twitter = require('twitter');
 const config = require('./config.js');
 const T = new Twitter(config);
 
-// Set up your count and search parameters
 const params = {
-  q: '#100daysofcode',
-  count: 8,
+  q: '#toefl',  
   result_type: 'recent',
   lang: 'en'
 }
 
+
+var tweetid=0;
+
 // Initiate your search using the above paramaters
 T.get('search/tweets', params, (err, data, response) => {
-  // If there is no error, proceed
-  if(err){
+    
+
+if(err){
     return console.log(err);
   }
 
-  // Loop through the returned tweets
-  const tweetsId = data.statuses
-    .map(tweet => ({ id: tweet.id_str }));
+  // If there is no error, proceed
+// Check returned tweets  
+tweetid = data.statuses[0].id_str;
+});
 
-  tweetsId.map(tweetId => {
-    T.post('favorites/create', tweetId, (err, response) => {
+
+
+T.post('statuses/retweet', tweetid, (err, response) => {
       if(err){
         return console.log(err[0].message);
       }
 
-      const username = response.user.screen_name;
-      const favoritedTweetId = response.id_str;
-      console.log(`Liked: https://twitter.com/${username}/status/${favoritedTweetId}`);
 
-    });
-  });
-})
+const username = response.user.screen_name;
+console.log(`Reweeted: ${username}`);
+});
