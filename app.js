@@ -1,4 +1,4 @@
-const Twitter = require('twitter');
+const Twitter = require('twit');
 const config = require('./config.js');
 const T = new Twitter({
 	consumer_key: 'EeoJusVzPqAWMriZ1eADrYb39',
