@@ -16,7 +16,7 @@ T.get('search/tweets', params, (err, data, response) => {
     
 
 if(err){
-    return console.log('Search error is ' err);
+    return console.log('Search error is '+err);
   }
 
   // If there is no error, proceed
