@@ -3,7 +3,7 @@ const config = require('./config.js');
 const T = new Twitter(config);
 
 const params = {
-  q: '#music',  
+  q: '#badminton',  
   result_type: 'recent',
   lang: 'en'
 }
