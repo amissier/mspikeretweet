@@ -3,7 +3,7 @@ const config = require('./config.js');
 const T = new Twitter(config);
 
 const params = {
-  q: '#elonmusk',  
+  q: '#trump, #Trump, #Melbourne',  
   result_type: 'recent',
   lang: 'en'
 }
