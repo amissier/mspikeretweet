@@ -27,5 +27,5 @@ T.post('statuses/retweet', tweetid, (err, response) => {
       }
 
 const username = response.user.screen_name;      
-console.log(`Retweeted: ${username}`);
+console.log(`Reweeted: ${username}`);
 });
