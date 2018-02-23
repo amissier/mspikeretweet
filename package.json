@@ -1,7 +1,7 @@
 {
-  "name": "Samvit Retweeter",
+  "name": "100daysofcode-bot",
   "version": "1.0.0",
-  "description": "Retweets a certain hashtag",
+  "description": "100 days of code bot, made with Node JS ",
   "main": "app.js",
   "dependencies": {
     "twitter": "^1.7.1"
@@ -13,18 +13,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pcodex/mspikeretweet.git"
+    "url": "git+https://github.com/ajukco/100daysofcode-bot.git"
   },
   "keywords": [
-    "samvit",
+    "100daysofcode",
     "bot",
     "twitter",
     "nodejs"
   ],
-  "author": "Prabhu Missier",
-  "license": "GNU",
+  "author": "Andrew Raynes",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pcodex/samvitsoftwaresolutions/bugs"
+    "url": "https://github.com/ajukco/100daysofcode-bot/issues"
   },
-  "homepage": "https://github.com/pcodex/mspikeretweet#readme"
+  "homepage": "https://github.com/ajukco/100daysofcode-bot#readme"
 }
