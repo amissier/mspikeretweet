@@ -30,7 +30,7 @@ tweetid = data.statuses[0].id_str;
 T.post('statuses/retweet/:id', {id:tweetid}, function(err, response) {
                 if (response) {
                     console.log('Retweeted!!!');
-                    const username = response.user.screen_name;
+                    const username = response.user.location;
                      console.log(`Reweeted: ${username}`);
                 }
                 // if there was an error while tweeting
