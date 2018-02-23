@@ -1,6 +1,6 @@
-{
-  consumer_key: "EeoJusVzPqAWMriZ1eADrYb39",
-  consumer_secret: "izauqcA2zYHbIci1YofPoTlXM9oVOGaHM7tJSowcGgLLuc4uQ8",
-  access_token_key: "57567113-OZVNjGKQW91SV8YxHCxLT1Fh70e6QKbWyD3tnAkkz",
-  access_token_secret: "VhjJBWXToj7vYTxUoyFetWInUR4T6FQMY3osdkbC7aw9d"
+module.exports = {
+  consumer_key: process.env.consumer_key,
+  consumer_secret: process.env.consumer_secret,
+  access_token_key: process.env.access_token_key,
+  access_token_secret: process.env.access_token_secret
 }
