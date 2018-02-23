@@ -3,7 +3,7 @@ const config = require('./config.js');
 const T = new Twitter(config);
 
 const params = {
-  q: '#mumbai',  
+  q: '#india',  
   result_type: 'recent',
   lang: 'en'
 }
@@ -34,6 +34,6 @@ T.post('statuses/retweet/:id', {id:tweetid}, function(err, response) {
                 }
                 // if there was an error while tweeting
                 if (err) {
-                    console.log('Something went wrong while RETWEETING... Duplication maybe...');
+                    console.log('Something went wrong '+err);
                 }
             });
