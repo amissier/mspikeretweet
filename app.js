@@ -29,7 +29,7 @@ tweetid = data.statuses[0].id_str;
 
 T.post('statuses/retweet', tweetid, (err, response) => {
       if(err){
-        return console.log(err[0].message);
+        return console.log('Retweet failed ...'+err[0].message);
       }
 
 
