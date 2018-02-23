@@ -22,6 +22,7 @@ if(err){
   // If there is no error, proceed
 // Check returned tweets  
 tweetid = data.statuses[0].id_str;
+  console.log('Tweet id is '+tweetid);
 });
 
 
