@@ -11,7 +11,7 @@ const params = {
 
 var tweetid=0;
 
-// Initiate your search using the above paramaters
+// Initiate your search using the above parameters
 T.get('search/tweets', params, (err, data, response) => {
     
 
